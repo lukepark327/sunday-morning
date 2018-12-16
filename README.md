@@ -2,7 +2,7 @@
 
 ![icon](https://github.com/twodude/sunday-morning/blob/master/images/icon.png)
 
-decentralized live-broadcast platform
+Decentralized live-broadcast platform.
 
 ## Backgrounds
 
