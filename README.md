@@ -1,4 +1,7 @@
-# sunday-morning
+# Sunday-morning
+
+![icon](https://github.com/twodude/sunday-morning/blob/master/images/icon.png)
+
 decentralized live-broadcast platform
 
 
