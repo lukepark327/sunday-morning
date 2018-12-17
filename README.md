@@ -39,4 +39,4 @@ Decentralized live-broadcast platform.
 
 ## License
 
-The Sunday-morning project is licensed under the [MIT](), also included in our repository in the [LICENSE]() file.
+The Sunday-morning project is licensed under the [MIT](https://opensource.org/licenses/MIT), also included in our repository in the [LICENSE]() file.
