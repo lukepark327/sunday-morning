@@ -29,7 +29,8 @@ Decentralized live-broadcast platform.
 ![demo](https://github.com/twodude/sunday-morning/blob/master/images/demo.png)
 
 ## References
-> https://github.com/twodude/link-dapp-dev   
+> [How to start LINK dApp dev.](https://github.com/twodude/link-dapp-dev)   
+> [ICON token starndard (IRC2)](https://github.com/icon-project/samples/tree/master/irc2_token)   
 
 ## Designed by
 
@@ -37,3 +38,5 @@ Decentralized live-broadcast platform.
 [@Minseo Park](https://github.com/finchparker)   
 
 ## License
+
+The Sunday-morning project is licensed under the [MIT](), also included in our repository in the [LICENSE]() file.
