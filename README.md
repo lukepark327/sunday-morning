@@ -33,4 +33,7 @@ Decentralized live-broadcast platform.
 
 ## Designed by
 
+[@Luke Park](https://github.com/twodude)   
+[@Minseo Park](https://github.com/finchparker)   
+
 ## License
