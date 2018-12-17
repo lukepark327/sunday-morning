@@ -1,3 +1,6 @@
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+
 # Sunday-morning
 
 ![icon](https://github.com/twodude/sunday-morning/blob/master/images/icon.png)
