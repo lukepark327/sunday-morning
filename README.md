@@ -29,8 +29,8 @@ Decentralized live-broadcast platform.
 ![demo](https://github.com/twodude/sunday-morning/blob/master/images/demo.png)
 
 ## References
-> [How to start LINK dApp dev.](https://github.com/twodude/link-dapp-dev)   
-> [ICON token starndard (IRC2)](https://github.com/icon-project/samples/tree/master/irc2_token)   
+* [How to start LINK dApp dev.](https://github.com/twodude/link-dapp-dev)   
+* [ICON token starndard (IRC2)](https://github.com/icon-project/samples/tree/master/irc2_token)   
 
 ## Designed by
 
