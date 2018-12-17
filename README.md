@@ -36,7 +36,7 @@ Decentralized live-broadcast platform.
 
 [@Luke Park](https://github.com/twodude)   
 [@Minseo Park](https://github.com/finchparker)   
-[@Seo Jeonga](https://github.com/zzna)   
+[@Jeonga Seo](https://github.com/zzna)   
 
 ## License
 
