@@ -5,7 +5,9 @@
 
 ![icon](https://github.com/twodude/sunday-morning/blob/master/images/icon.png)
 
-Decentralized live-broadcast platform.
+Sunday-morning is a decentralized live-broadcast platform.
+> [**```LINE```** X **```KIISE```** Blockchain Competition Entry Work](http://www.kiise.or.kr/conference/main/getContent.do?CC=KSC&CS=2018&content_no=888&PARENT_ID=010900)
+
 
 ## Backgrounds
 
