@@ -38,13 +38,13 @@ When you receive an "put is not allowed" error, try this:
 - Go to ```~/word/lib/python3.6/site-packages/iconservice/database/db.py```, ```_is_db_writable_on_context()```.
 - Change the following code
 
-```python
-    return context_type != IconScoreContextType.QUERY and \
-        func_type != IconScoreFuncType.READONLY
-```
+    ```python
+        return context_type != IconScoreContextType.QUERY and \
+            func_type != IconScoreFuncType.READONLY
+    ```
 
-to
+    to
 
-```python
-    return True
-```
+    ```python
+        return True
+    ```
