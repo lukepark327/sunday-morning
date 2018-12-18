@@ -4,7 +4,7 @@
 tbears deploy -k keys/1/private.key -c contracts/irc2_token/sampletoken.json contracts/irc2_token/sample_token
 ```
 
-Get "scoreAddress" which means contract address. For example: ```cxc083078edbe951560728105235c235d6f5906c65```
+Get "scoreAddress" by ```tbears txresult {the above TxID}```. For example: ```cxc083078edbe951560728105235c235d6f5906c65```
 
 
 # Trouble Shooting
