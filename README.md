@@ -130,9 +130,21 @@ curl -X POST http://127.0.0.1:9000/api/v3 -H"Content-Type: application/json; app
 $ tbears clear
 ```
 
-## Trouble Shooting
+<!--
+////////////////////////////////////////
+-->
 
-### Out of step
+# Demonstration
+
+![demo](https://github.com/twodude/sunday-morning/blob/master/images/demo.png)
+
+<!--
+////////////////////////////////////////
+-->
+
+# Trouble Shooting
+
+## Out of step
 
 ```javascript
     ...
@@ -145,7 +157,7 @@ $ tbears clear
 
 When you receive an "Out of step" error, assign more "stepLimit" in the request message.
 
-### put is not allowed
+## put is not allowed
 
 ```javascript
     ...
@@ -171,14 +183,6 @@ When you receive an "put is not allowed" error, try this:
     ```python
         return True
     ```
-
-<!--
-////////////////////////////////////////
--->
-
-# Demonstration
-
-![demo](https://github.com/twodude/sunday-morning/blob/master/images/demo.png)
 
 <!--
 ////////////////////////////////////////
