@@ -85,7 +85,7 @@ Sunday-morning is a decentralized live-broadcast platform.
 ### Features
 
 * Making a Playlist
-* Watching Videos through the Playlist.
+* Watching Videos through the Playlist
 * Auto-distribution
 
 <!--
