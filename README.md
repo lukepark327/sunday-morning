@@ -121,6 +121,28 @@ Or you can use **HTTP POST** instead:
 curl -X POST http://127.0.0.1:9000/api/v3 -H"Content-Type: application/json; application/json" -d @<call_json>
 ```
 
+Here is a sample of ```<call_json>``` below. Change "id", "from", "to", "method", and "params".
+
+```javascript
+{
+    "jsonrpc": "2.0",
+    "method": "icx_call",
+    "id": 1234,
+    "params": {
+        "from"	: "hx27d99b5a1d8ffdd58bce204c303153a1a388eead",
+        "to"	: "cx509430b08e156d002ade0e1cbdf0b2c5a5daad45",
+        "dataType": "call",
+        "data": {
+            "method": "purchase",
+            "params": {
+                "_hash"	    : "0x0000123412341234123412341234123412341234123412341234123412341234",
+				"_value"	: "100"
+			}
+        }
+    }
+}
+```
+
 ## Stop
 ```bash
 (work) $ tbears stop
