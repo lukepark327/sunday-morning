@@ -4,7 +4,7 @@
     "id": 1234,
     "params": {
         "from"	: "hx27d99b5a1d8ffdd58bce204c303153a1a388eead",
-        "to"	: "cx509430b08e156d002ade0e1cbdf0b2c5a5daad45",
+        "to"	: "cxa754cd00084b02fd5c6292beb3a9c733429f6f39",
         "dataType": "call",
         "data": {
             "method": "purchase",
@@ -15,4 +15,3 @@
         }
     }
 }
-

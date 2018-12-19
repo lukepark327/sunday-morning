@@ -3,13 +3,13 @@
     "method": "icx_call",
     "id": 1234,
     "params": {
-        "from"	: "hx0e82ca795b9f0eea6810718d038a0bfba4fef201",
+        "from"	: "hx27d99b5a1d8ffdd58bce204c303153a1a388eead",
         "to"	: "cxa754cd00084b02fd5c6292beb3a9c733429f6f39",
         "dataType": "call",
         "data": {
-            "method": "ownerOf",
+            "method": "videoOfCR",
             "params": {
-                "_hash"	    : "0x1111111111111111111111111111111111111111111111111111111111111111"
+                "_id"	    : "1"
 			}
         }
     }

@@ -4,6 +4,7 @@ from iconservice import *
 TAG = 'LiveBroadcast'
 
 HASH_NULL = "0x0000000000000000000000000000000000000000000000000000000000000000"
+CR_NULL = 0
 
 
 # An interface of ICON Token Standard, IRC-2
@@ -51,9 +52,9 @@ class LiveBroadcast(IconScoreBase, TokenStandard):
     _ADMIN          = 'admin'
     _VIDEOS         = 'videos'
     _ADRS           = 'adrs'
-    _AD_VIDEO       = 'ad_video'        # key: SHA256(AD) -> value: SHA256(VIDEO)
-
-
+    _CRS            = 'crs'
+    _AD_VIDEO       = 'ad_video'        # key: SHA256(AD)   -> value: SHA256(VIDEO)
+    _CR_VIDEO       = 'cr_video'        # key: ID(curation) -> value: SHA256(VIDEO)
 
     def __init__(self, db: IconScoreDatabase) -> None:
         super().__init__(db)
@@ -64,7 +65,9 @@ class LiveBroadcast(IconScoreBase, TokenStandard):
         self._admin         = VarDB(self._ADMIN, db, value_type=Address)
         self._videos        = DictDB(self._VIDEOS, db, value_type=Address)  # hash(SHA256): str -> Address
         self._adrs          = DictDB(self._ADRS, db, value_type=Address)    # hash(SHA256): str -> Address
+        self._crs           = DictDB(self._CRS, db, value_type=Address)     # ID(curation): int -> Address
         self._ad_video      = DictDB(self._AD_VIDEO, db, value_type=str)    # hash(SHA256): str -> hash(SHA256): str
+        self._cr_video      = DictDB(self._CR_VIDEO, db, value_type=str)    # ID(curation): int -> hash(SHA256): str
 
     def on_install(self, _initialSupply: int, _decimals: int) -> None:
         super().on_install()
@@ -87,7 +90,9 @@ class LiveBroadcast(IconScoreBase, TokenStandard):
         self._admin                 = self.msg.sender
         self._videos[HASH_NULL]     = self.msg.sender
         self._adrs[HASH_NULL]       = self.msg.sender
+        self._crs[CR_NULL]          = self.msg.sender
         self._ad_video[HASH_NULL]   = HASH_NULL
+        self._cr_video[CR_NULL]     = HASH_NULL
 
     def on_update(self) -> None:
         super().on_update()
@@ -186,20 +191,20 @@ class LiveBroadcast(IconScoreBase, TokenStandard):
         return self._adrs[_hash]
 
     @external
-    def videoOf(self, _hash: str) -> str:
+    def videoOfAD(self, _hash: str) -> str:
         return self._ad_video[_hash]
 
     @external
-    def enroll(self, _hash: str):
+    def enrollAD(self, _hash: str):
         # advertiser
-        self._enroll(_hash, self.msg.sender)
+        self._enrollAD(_hash, self.msg.sender)
 
-    def _enroll(self, _hash: str, _owner: Address):
+    def _enrollAD(self, _hash: str, _owner: Address):
         self._adrs[_hash] = _owner
 
     @external
     def place(self, _where: str, _hash: str):
-        # prerequisite: upload() and enroll() first.
+        # prerequisite: upload() and enrollAD() first.
         if self.adrOf(_hash) != self.msg.sender and self.ownerOf(_where) != self.msg.sender:
             revert("Not Permitted")
 
@@ -212,12 +217,53 @@ class LiveBroadcast(IconScoreBase, TokenStandard):
 
         _from       = self.msg.sender
         _adr        = self.adrOf(_hash)
-        _creator    = self.ownerOf(self.videoOf(_hash))
+        _creator    = self.ownerOf(self.videoOfAD(_hash))
 
         _fee            = int(_value / 10)
         _adr_share      = int((_value - _fee) / 2)
         _creator_share  = _value - _fee - _adr_share
 
         self._transfer(_from, _adr, _adr_share, _data)
+        self._transfer(_from, _creator, _creator_share, _data)
+        self._transfer(_from, self._admin, _fee, _data)
+
+    # Curation Commerce
+    @external(readonly=True)
+    def makerOf(self, _id: int) -> Address:
+        return self._crs[_id]
+
+    @external
+    def videoOfCR(self, _id: int) -> str:
+        return self._cr_video[_id]
+
+    @external
+    def enrollCR(self, _id: int):
+        self._enrollCR(_id, self.msg.sender)
+
+    def _enrollCR(self, _id: int, _owner: Address):
+        self._crs[_id] = _owner
+
+    @external
+    def listing(self, _where: str, _id: int):
+        # prerequisite: upload() and enrollCR() first.
+        if self.makerOf(_id) != self.msg.sender:
+            revert("Not Permitted")
+
+        self._cr_video[_id] = _where
+
+    @external
+    def watching(self, _id: int, _value: int, _data: bytes = None):
+        if _data is None:
+            _data = b'None'
+
+        _from = self.msg.sender
+        _cr = self.makerOf(_id)
+        _creator = self.ownerOf(self.videoOfCR(_id))
+
+        _fee = int(_value / 10)
+        _cr_share = int((_value - _fee) / 10)
+        _creator_share = _value - _fee - _cr_share
+
+        self._transfer(_from, _cr, _cr_share, _data)
         self._transfer(_from, _creator, _creator_share, _data)
         self._transfer(_from, self._admin, _fee, _data)
