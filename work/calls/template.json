@@ -1,0 +1,17 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_call",
+    "id": 1234,
+    "params": {
+        "from"	: "hxbe258ceb872e08851f1f59694dac2558708ece11",
+        "to"	: "cxb0776ee37f5b45bfaea8cff1d8232fbb6122ec32",
+        "dataType": "call",
+        "data": {
+            "method": "get_balance",
+            "params": {
+                "address"	: "hx1f9a3310f60a03934b917509c86442db703cbd52"
+            }
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_call",
+    "id": 1234,
+    "params": {
+        "from"	: "hx0e82ca795b9f0eea6810718d038a0bfba4fef201",
+        "to"	: "cx3a3ffd06d9de085926bd626114215d7533cfa1ce",
+        "dataType": "call",
+        "data": {
+            "method": "ownerOf",
+            "params": {
+                "_hash"	    : "0x1111123412341234123412341234123412341234123412341234123412341234"
+			}
+        }
+    }
+}
+
