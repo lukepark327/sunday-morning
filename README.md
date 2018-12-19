@@ -7,7 +7,7 @@
 
 # Sunday-morning
 
-![icon](https://github.com/twodude/sunday-morning/blob/master/images/icon.png)
+![icon](https://github.com/twodude/sunday-morning/blob/master/images/symbol.png)
 
 **Sunday-morning** is a decentralized live-broadcast platform.
 
