@@ -1,17 +1,30 @@
-# Deploy
+# Start
+```bash
+$ cd work
+$ source bin/activate
+(work) $ tbears start
+```
 
+# Deploy
 ```bash
 (work) $ tbears deploy -k <keystore_file> [-c deploy_json] <contract_dir>
 ```
-
 Get "scoreAddress" by ```tbears txresult <the above TxID>```.
 - For example: ```cxc083078edbe951560728105235c235d6f5906c65```
 
-
-# Run
-
+# Call
 ```bash
 (work) $ tbears call <call_json>
+```
+
+# Stop
+```bash
+(work) $ tbears stop
+```
+
+## Delete deployed Contracts
+```bash
+$ tbears clear
 ```
 
 # Trouble Shooting
