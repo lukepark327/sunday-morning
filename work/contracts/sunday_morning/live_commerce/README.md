@@ -1,21 +1,27 @@
-# ICON Token Standard RI
+# Decentralized Live-broadcast Platform
 
 ## Overview
 
-* Provide a simple and solid reference implementation for ICON token starndard (IRC2)
+* The contents creator uploads paid videos on the platform.   
+* The contract automatically distributes profit.   
 
-## Deployment
+## Features
+
+* Video upload
+* Donation
+* Auto-distribution
+
+## Deploy
 
 ```bash
-$ tbears deploy -k <keystore_file> -c sampletoken.json sample_token
+$ tbears deploy -k <keystore_file> -c <parameter_file> <contract_dir>
 ```
 
-## Test
+## Run
 ```bash
-$ tbears test sample_token
+$ tbears call <json_file>
 ```
 
 ## References
-
-* [ICON Token Standard](https://github.com/icon-project/IIPs/blob/master/IIPS/iip-2.md)
-
+* [LINK dApp Development Guide](https://github.com/twodude/link-dapp-dev)   
+* [ICON Token Standard RI](https://github.com/icon-project/samples/tree/master/irc2_token)   
