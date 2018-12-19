@@ -8,6 +8,12 @@ Get "scoreAddress" by ```tbears txresult <the above TxID>```.
 - For example: ```cxc083078edbe951560728105235c235d6f5906c65```
 
 
+# Run
+
+```bash
+(work) $ tbears call <call_json>
+```
+
 # Trouble Shooting
 
 ## Out of step
