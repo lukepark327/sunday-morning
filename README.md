@@ -91,11 +91,38 @@ We expect to activate and spread the live broadcasting ecosystem through ```Sund
 
 # How to Use
 
-## Environments
+## Install
 
-- Python 3.6.7   
+### Environments
+
+upper version 3.6, under version 3.7   
+python 3.6.7 recommended
+
 - tbears 1.0.6.2   
 - requests 2.19.1
+
+### OS
+
+Only for macOS and Linux.
+
+### Install LINE SDK
+
+```bash
+brew install leveldb
+brew install rabbitmq
+brew services start rabbitmq
+```
+```bash
+mkdir work
+cd work
+```
+```bash
+virtualenv -p python3 .
+source bin/activate
+```
+```bash
+pip install tbears
+```
 
 ## Start
 ```bash
