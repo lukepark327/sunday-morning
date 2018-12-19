@@ -23,7 +23,7 @@ Appearance of new business models, like **live commerce** and **curation commerc
 
 With our platform, there are many opportunities to expand business. Donation and subscription, live commerce, curation commerce, and so on. Also you are able to settle profits automatically, so what you need is a just passion! 
 
-We expect to activate and spread the live broadcasting ecosystem through ```Sunday-morning```.
+We expect to activate and spread the live broadcasting ecosystem through ```Sunday-morning```. Why don't you join us?
 
 
 <!--
