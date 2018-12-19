@@ -97,7 +97,7 @@ Sunday-morning is a decentralized live-broadcast platform.
 ### Environments
 
 ### Deploy & Call
-[Watch this paper.](https://github.com/twodude/sunday-morning/blob/master/work/README.md)   
+- [Watch this paper.](https://github.com/twodude/sunday-morning/blob/master/work/README.md)   
 
 <!--
 ////////////////////////////////////////
