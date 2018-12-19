@@ -16,20 +16,6 @@ Sunday-morning is a decentralized live-broadcast platform.
 ////////////////////////////////////////
 -->
 
-## Backgrounds
-
-<!--
-////////////////////////////////////////
--->
-
-## Motivation
-
-![chart](https://github.com/twodude/sunday-morning/blob/master/images/back.png)
-
-<!--
-////////////////////////////////////////
--->
-
 ## Abstract
 
 <!--
