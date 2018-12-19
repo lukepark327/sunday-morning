@@ -1,4 +1,5 @@
-[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)   
+[![license](https://img.shields.io/badge/python-3.6.7-blue.svg)](https://img.shields.io/badge/python-3.6.7-blue.svg)   
 
 <!--
 ////////////////////////////////////////
@@ -144,6 +145,23 @@ $ tbears clear
 
 # Trouble Shooting
 
+## pkg-config is required
+
+```bash
+'pkg-config' is required to install this package. Please see the README for details.
+``` 
+
+Do ```brew install pkg-config```, ```brew link pkg-config``` and ```pip install tbears```.
+
+## tbears samples
+
+```tbears samples``` causes an error like:
+```bash
+The samples command has been deprecated since v1.1.0 ...
+```
+
+When you receive the above error, go https://github.com/icon-project/samples, download files, move them into /work. Then do ```tbears deploy -k private.key hello_world/hello_world/```, Input your keystore password, step by step.
+
 ## Out of step
 
 ```javascript
@@ -183,23 +201,6 @@ When you receive an "put is not allowed" error, try this stopgap:
     ```python
         return True
     ```
-
-## pkg-config is required
-
-```bash
-'pkg-config' is required to install this package. Please see the README for details.
-``` 
-
-Do ```brew install pkg-config```, ```brew link pkg-config``` and ```pip install tbears```.
-
-## tbears samples
-
-```tbears samples``` causes an error like:
-```bash
-The samples command has been deprecated since v1.1.0 ...
-```
-
-When you receive the above error, go https://github.com/icon-project/samples, download files, move them into /work. Then do ```tbears deploy -k private.key hello_world/hello_world/```, Input your keystore password, step by step.
 
 <!--
 ////////////////////////////////////////
