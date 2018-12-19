@@ -115,20 +115,20 @@ Get "scoreAddress" by ```tbears txresult <the above TxID>```.
 (work) $ tbears call <call_json>
 ```
 
-* ### Use HTTP POST
-    ```bash
-    curl -X POST http://127.0.0.1:9000/api/v3 -H"Content-Type: application/json; application/json" -d @<call_json>
-    ```
+Or you can use **HTTP POST** instead:
+```bash
+curl -X POST http://127.0.0.1:9000/api/v3 -H"Content-Type: application/json; application/json" -d @<call_json>
+```
 
 ## Stop
 ```bash
 (work) $ tbears stop
 ```
 
-* ### Delete deployed Contracts
-    ```bash
-    $ tbears clear
-    ```
+## Delete deployed Contracts
+```bash
+$ tbears clear
+```
 
 ## Trouble Shooting
 
