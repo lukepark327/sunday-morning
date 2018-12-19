@@ -1,5 +1,5 @@
-[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)   
-[![license](https://img.shields.io/badge/python-3.6.7-blue.svg)](https://img.shields.io/badge/python-3.6.7-blue.svg)   
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/python-3.6.7-blue.svg)](https://img.shields.io/badge/python-3.6.7-blue.svg)
 
 <!--
 ////////////////////////////////////////
