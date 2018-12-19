@@ -209,11 +209,12 @@ When you receive an "Out of step" error, assign more "stepLimit" in the request 
     ...
 ```
 
-When you receive an "put is not allowed" error, try this stopgap:
+When you receive an "put is not allowed" error, try this *stopgap*:
 - Go to ```~/word/lib/python3.6/site-packages/iconservice/database/db.py```, ```_is_db_writable_on_context()```.
 - Change the following code
 
     ```python
+    	...
         return context_type != IconScoreContextType.QUERY and \
             func_type != IconScoreFuncType.READONLY
     ```
@@ -221,6 +222,7 @@ When you receive an "put is not allowed" error, try this stopgap:
     to
 
     ```python
+    	...
         return True
     ```
 
