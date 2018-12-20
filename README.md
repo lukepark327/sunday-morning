@@ -89,6 +89,18 @@ We expect to activate and spread the live broadcasting ecosystem through ```Sund
 ////////////////////////////////////////
 -->
 
+# How to Use
+
+* Click [HERE](https://github.com/twodude/sunday-morning/blob/master/contents/1-how-to-use.md) to see the details.
+
+# Trouble Shooting
+
+* Click [HERE](https://github.com/twodude/sunday-morning/blob/master/contents/2-trouble-shooting.md) to see the details.
+
+<!--
+////////////////////////////////////////
+-->
+
 # Demonstration
 
 ## Deploy LINK SCORE
