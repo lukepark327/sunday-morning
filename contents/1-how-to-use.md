@@ -93,21 +93,3 @@ Here is a sample of ```<call_json>``` below. Change "id", "from", "to", "method"
 ```bash
 $ tbears clear
 ```
-
-<!--
-////////////////////////////////////////
--->
-
-# Demonstration
-
-## Deploy LINK SCORE
-[![video](http://img.youtube.com/vi/LRXtsxQeFec/0.jpg)](https://www.youtube.com/watch?v=LRXtsxQeFec)   
-> Click on the image above to play the video.
-
-## Call LINK SCORE's Functions
-[![video](http://img.youtube.com/vi/aHySd_zohN8/0.jpg)](https://www.youtube.com/watch?v=aHySd_zohN8)   
-> Click on the image above to play the video.
-
-<!--
-////////////////////////////////////////
--->
