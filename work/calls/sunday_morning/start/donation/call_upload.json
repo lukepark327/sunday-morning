@@ -1,15 +1,15 @@
 {
     "jsonrpc": "2.0",
     "method": "icx_call",
-    "id": 1234,
+    "id": 1,
     "params": {
         "from"	: "hx0e82ca795b9f0eea6810718d038a0bfba4fef201",
-        "to"	: "cxa754cd00084b02fd5c6292beb3a9c733429f6f39",
+        "to"	: "cxe8202e9cf923b2bc648263b19518cb31de3c5af8",
         "dataType": "call",
         "data": {
             "method": "upload",
             "params": {
-                "_hash"	    : "0x1111111111111111111111111111111111111111111111111111111111111111"
+                "_hash"	    : "0x0cab1c9617404faf2b24e221e189ca5945813e14d3f766345b09ca13bbe28ffc"
 			}
         }
     }

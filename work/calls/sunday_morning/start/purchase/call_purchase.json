@@ -1,0 +1,17 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_call",
+    "id": 3,
+    "params": {
+        "from"	: "hx4d4b928993a50ab3dc725923aa7387a214315c50",
+        "to"	: "cxe8202e9cf923b2bc648263b19518cb31de3c5af8",
+        "dataType": "call",
+        "data": {
+            "method": "purchase",
+            "params": {
+                "_hash"	    : "0x70ba33708cbfb103f1a8e34afef333ba7dc021022b2d9aaa583aabb8058d8d67",
+				"_value"	: "300"
+			}
+        }
+    }
+}

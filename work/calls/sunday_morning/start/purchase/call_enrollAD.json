@@ -1,15 +1,15 @@
 {
     "jsonrpc": "2.0",
     "method": "icx_call",
-    "id": 1234,
+    "id": 1,
     "params": {
         "from"	: "hxe40114c6999ff0eb35cab178f4c2a62410772d8a",
-        "to"	: "cxa754cd00084b02fd5c6292beb3a9c733429f6f39",
+        "to"	: "cxe8202e9cf923b2bc648263b19518cb31de3c5af8",
         "dataType": "call",
         "data": {
             "method": "enrollAD",
             "params": {
-                "_hash"	    : "0x0000123412341234123412341234123412341234123412341234123412341234"
+                "_hash"	    : "0x70ba33708cbfb103f1a8e34afef333ba7dc021022b2d9aaa583aabb8058d8d67"
 			}
         }
     }

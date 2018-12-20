@@ -1,15 +1,15 @@
 {
     "jsonrpc": "2.0",
     "method": "icx_call",
-    "id": 1234,
+    "id": 1,
     "params": {
         "from"	: "hx27d99b5a1d8ffdd58bce204c303153a1a388eead",
         "to"	: "cxe8202e9cf923b2bc648263b19518cb31de3c5af8",
         "dataType": "call",
         "data": {
-            "method": "videoOfAD",
+            "method": "balanceOf",
             "params": {
-                "_hash"	    : "0x0000123412341234123412341234123412341234123412341234123412341234"
+                "_owner"	: "hx27d99b5a1d8ffdd58bce204c303153a1a388eead"
 			}
         }
     }
