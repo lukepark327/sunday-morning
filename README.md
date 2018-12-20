@@ -89,10 +89,24 @@ We expect to activate and spread the live broadcasting ecosystem through ```Sund
 ////////////////////////////////////////
 -->
 
+# Demonstration
+
+## Deploy LINK SCORE
+[![video](http://img.youtube.com/vi/LRXtsxQeFec/0.jpg)](https://www.youtube.com/watch?v=LRXtsxQeFec)   
+> Click on the image above to play the video.
+
+## Call LINK SCORE's Functions
+[![video](http://img.youtube.com/vi/aHySd_zohN8/0.jpg)](https://www.youtube.com/watch?v=aHySd_zohN8)   
+> Click on the image above to play the video.
+
+<!--
+////////////////////////////////////////
+-->
+
 # References
-* [LINK dApp Development Guide](https://github.com/twodude/link-dapp-dev)   
-* [ICON Token Standard RI](https://github.com/icon-project/samples/tree/master/irc2_token)  
-* [ICON Documents](https://github.com/icon-project/icon-project.github.io)   
+> [LINK dApp Development Guide](https://github.com/twodude/link-dapp-dev)   
+> [ICON Token Standard RI](https://github.com/icon-project/samples/tree/master/irc2_token)   
+> [ICON Documents](https://github.com/icon-project/icon-project.github.io)   
 
 <!--
 ////////////////////////////////////////
