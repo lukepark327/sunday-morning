@@ -131,6 +131,11 @@ $ source bin/activate
 (work) $ tbears start
 ```
 
+## Get Private Key
+```bash
+(work) $ tbears keystore <private.key>
+```
+
 ## Deploy
 ```bash
 (work) $ tbears deploy -k <keystore_file> [-c deploy_json] <contract_dir>
